@@ -1,0 +1,61 @@
+*{margin: 0; padding: 0; background-color: rgb(3, 1, 20); font-family: 'Roboto', sans-serif;}
+
+
+/* scrollbar width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 0;}/* Track */::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(20, 14, 18);
+    border-radius: 10px;}/* Handle */ ::-webkit-scrollbar-thumb {
+    background: rgb(0, 16, 70);
+    border-radius: 10px;} ::-webkit-scrollbar-thumb:hover{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;}  /* close scroolbar */
+
+
+
+.table-box{margin: 50px auto;}
+.table-row{
+    display: table;
+    width: 80%;
+    margin: 10px auto;
+    background: transparent;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.534);
+    font-size: 7.7px;
+    box-shadow: 0px 0px 12px ;
+    border-radius: 50px;
+    transition: 0.5s
+    ;
+}
+.table-cell{
+    display: table-cell;
+    width: 30%;
+    text-align: center;
+    padding: 4px 6px;
+    border-right: 1px solid #000a8f9f;
+    vertical-align: middle;
+    transition: 0.5s
+}
+.head{color: rgba(200, 204, 255, 0.685);}
+.head:hover{color: rgb(152, 159, 255); padding: 8px; transition: 0.5s; }
+.head .table-cell{border-right: none;}
+.last{border-right: none; font-size: 7px;}
+
+.table-col {
+    box-shadow: 0px 0px 0px ; transition: 1s;
+}
+.table-col:hover{
+    box-shadow: 0px 0px 0px ;
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+    box-shadow:  0px 5px 12px rgba(224, 221, 255, 0.123);
+}
+.link{
+    color: rgba(2, 0, 92, 0.219);
+    transition: 0.2s;
+}
+.link:hover{
+    color: rgb(140, 0, 255);
+    transition: 0.2s;
+}
