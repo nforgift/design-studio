@@ -2,71 +2,54 @@
 {
 margin : 0;
 padding : 0;
-font-family :  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,'sans-serif';
+font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 box-sizing: border-box;
+background-color: #000000;
 }
+/* scrollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0;}/* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(20, 14, 18);
+    border-radius: 10px;}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 16, 70);
+    border-radius: 10px;}
+  ::-webkit-scrollbar-thumb:hover{
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+  }  /* close scroolbar */
  
-body {
-    display : flex;
-    justify-content: center;
-    min-height: 100vh;
-    align-items: center;
-    background-color: rgba(0, 255, 255, 0.384);
-    cursor: pointer;
-}
-
-
-.calculator {
+  .logostartup {
+    width: 70%;
+    height: 100%; padding-top: 0;margin-top: 0;
     position: relative;
-    display: grid;
-}
+    margin: 0 150px;
+  }
 
-.calculator .value{
-    grid-column: span 4;
-    height: 50px;
-    text-align: right;
-    border: none;
-    outline: none;
-    padding: opx;
-    font-size: 20px;
-}
+  .navbar{
+    align-items: center;  height: 50px; width:100%; z-index: 9px;
+  }
+  .all-links{
+    background-color:#fafcff;
+    width: 100%;
+    display: flex;
+    padding: 1px 1px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    z-index: 9;
+  }
 
-.calculator span{
-    display : grid;
-    width : 60px;
-    height: 62px;
-    color: rgb(162, 111, 166);
-    place-items: center;
-    border: 1px solid rgb(4, 54, 54);
-    background-color: rgba(243, 76, 215, 0.233);
-}
+  .link{
+    background-color:#fafcff;
+    text-transform: capitalize;
 
-.calculator span.clear{
-    grid-column: span 2;
-    background: rgba(0, 0, 0, 0.699);
-    color:rgb(162, 111, 166);
-    width:120px
-}
-
-.calculator span.minus {
-    grid-column: span 2;
-    background: rgba(0, 12, 15, 0.39);
-    color:rgb(0, 111, 166);
-    width:120px
-}
-
-.calculator span.hundred{
-    color:rgb(4, 54, 54)
-    
-}
-
-.calculator span:hover{
-    background-color: seashell;
-}
-
-.calculator span.equals {
-    grid-column: span 3;
-    background: rgba(255, 0, 106, 0.418);
-    color:rgb(0, 111, 166);
-    width:180px
-}
+    padding: 0 10px;
+    text-decoration: none;
+    color: #021127;
+    opacity: 0.35;
+    transition: 0.35s;
+  } .link:hover{opacity: 1;}
